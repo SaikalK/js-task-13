@@ -1,9 +1,9 @@
-document.getElementById("get-data").addEventListener("click", loadData);
+document.getElementById("get-news").addEventListener("click", loadData);
 
 function loadData() {
   const xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "db.txt", true);
+  xhr.open("GET", "news.txt", true);
 
   xhr.onload = function () {
     if (this.status === 200) {
